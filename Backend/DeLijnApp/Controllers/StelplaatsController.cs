@@ -1,4 +1,5 @@
-﻿using DeLijnApp.Models;
+﻿using DeLijnApp.Engine;
+using DeLijnApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DeLijnApp.Controllers
@@ -10,8 +11,9 @@ namespace DeLijnApp.Controllers
         [HttpPost]
         public ActionResult<StelplaatsModel> Plan([FromBody] StelplaatsModel stelplaats)
         {
+            var result = new ParkingEngine().ParkBuses(stelplaats);
 
-            return Ok(stelplaats);
+            return Ok(result);
         }
     }
 }
