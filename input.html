@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stelplaats Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="input.js"></script>
+    
+</head>
+<body>
+    <h1>Input upload</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <select name="stelplaats" id="" class="m-5 mx-auto">
+            <!-- kan dynamisch gemaakt worden -->
+            <option value="">Kies stelplaats</option>
+            <option value="arsenaal">Arsenaal</option>
+            <option value="o1">Andere optie 1</option>
+            <option value="o2">Andere optie 2</option>
+        </select>
+        <br>        
+
+        <form action="" method="" class="m-5z">
+            <div class="d-flex justify-content-around">
+            <!-- big bus -->
+                <div class="d-flex flex-column">
+                    <!-- icon  -->
+                    <img src="/" alt="img of big bus">
+                    
+                    <!-- input veld -->
+                    <div id="inputFieldsBig" class="d-flex flex-column">
+                        <input type="number" name="b1" id="b1" placeholder="Busnummer">
+                    </div>
+                    
+
+                    <!-- add button -->
+                    <button id="addBigBus">+</button>
+                </div>
+
+                <!-- medium bus -->
+                <div class="d-flex flex-column" >
+                    <!-- icon  -->
+                    <img src="/" alt="img of medium bus">
+                    
+                    <!-- input veld -->
+                    <div id="inputFieldsMedium" class="d-flex flex-column">
+                        <input type="number" name="m1" id="m1" placeholder="Busnummer">
+                    </div>
+                    
+                    <!-- add button -->
+                    <button id="addMediumBus">+</button>
+                </div>
+                <!-- small bus -->
+                <div class="d-flex flex-column">
+                    <!-- icon  -->
+                    <img src="/" alt="img of small bus">
+                    
+                    <!-- input veld -->
+                    <div id="inputFieldsSmall" class="d-flex flex-column">
+                        <input type="number" name="s1" id="s1" placeholder="Busnummer">
+                    </div>
+                    
+
+                    <!-- add button -->
+                    <button id="addSmallBus">+</button>
+                </div>
+
+                
+            </div>
+            <div>
+                <button type="submit" class="mx-auto">Submit</button>
+            </div>
+            
+        </form>
+            
+            
+    
+    </form>
+</body>
+</html>
